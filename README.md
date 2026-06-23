@@ -3,12 +3,12 @@
 <br />
 
 <div align="center">
-  <img src="https://img.shields.io/github/languages/top/rafaelq80/conta_bancaria?style=flat-square" />
-  <img src="https://img.shields.io/github/repo-size/rafaelq80/conta_bancaria?style=flat-square" />
-  <img src="https://img.shields.io/github/languages/count/rafaelq80/conta_bancaria?style=flat-square" />
-  <img src="https://img.shields.io/github/last-commit/rafaelq80/conta_bancaria?style=flat-square" />
-  <img src="https://img.shields.io/github/issues/rafaelq80/conta_bancaria?style=flat-square" />
-  <img src="https://img.shields.io/github/issues-pr/rafaelq80/conta_bancaria?style=flat-square" />
+  <img src="https://img.shields.io/github/languages/top/rafaelq80/conta_bancaria_t85?style=flat-square" />
+  <img src="https://img.shields.io/github/repo-size/rafaelq80/conta_bancaria_t85?style=flat-square" />
+  <img src="https://img.shields.io/github/languages/count/rafaelq80/conta_bancaria_t85?style=flat-square" />
+  <img src="https://img.shields.io/github/last-commit/rafaelq80/conta_bancaria_t85?style=flat-square" />
+  <img src="https://img.shields.io/github/issues/rafaelq80/conta_bancaria_t85?style=flat-square" />
+  <img src="https://img.shields.io/github/issues-pr/rafaelq80/conta_bancaria_t85?style=flat-square" />
   <img src="https://img.shields.io/badge/status-conclu%C3%ADdo-brightgreen" alt="Status: Concluído">
 
 
@@ -135,10 +135,10 @@ Para executar os códigos localmente, você precisará de:
 
 ### 6.1. Importando o Projeto
 
-1. Clone o repositório do Projeto [Conta Bancária](https://github.com/rafaelq80/conta_bancaria) dentro da pasta do *Workspace* do Eclipse/STS
+1. Clone o repositório do Projeto [Conta Bancária](https://github.com/rafaelq80/conta_bancaria_t85) dentro da pasta do *Workspace* do Eclipse/STS
 
 ```bash
-git clone https://github.com/rafaelq80/conta_bancaria.git
+git clone https://github.com/rafaelq80/conta_bancaria_t85.git
 ```
 
 2. **Abra o Eclipse/STS** e selecione a pasta do *Workspace* onde você clonou o repositório do projeto
