@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import conta_bancaria.model.Conta;
 import conta_bancaria.model.ContaCorrente;
+import conta_bancaria.model.ContaPoupanca;
 import conta_bancaria.util.Cores;
 
 public class Menu {
@@ -15,51 +16,66 @@ public class Menu {
 		
 		/* Instanciar Objetos da Classe Conta */
 		
+		System.out.println(Cores.TEXT_GREEN_BOLD_BRIGHT + "\nTestes - Classe Conta\n" + Cores.TEXT_RESET);
+		
 		Conta c1 = new Conta(1, 123, 1, "Isabella", 200000.00f);
 		c1.visualizar();
 		
 		Conta c2 = new Conta(2, 123, 2, "Thiago", 100000.00f);
 		c2.visualizar();
 		
-		/* Alteração do Saldo*/
 		c1.setSaldo(300000.00f);
 		c1.setTitular("Isabella Bruno");
 		c1.visualizar();
 		
-		
-		/**
-		 * Saque na conta c2
-		 * if ternário
-		 * 
-		 * condição ? ação se for verdadeiro : ação se for falso
-		 * */
-		
 		System.out.println("\nSacar R$ 1.000,00 da conta C2: " + (c2.sacar(1000.00f) ? 
-				"Saque efetuado com sucesso!" : "Saldo Insuficiente"));
+				"Saque efetuado com sucesso! | Saldo: " + c2.getSaldo() : "Saldo Insuficiente! | Saldo: " + c2.getSaldo()));
 		
 		System.out.println("\nSacar R$ 300.000,00 da conta C2: " + (c2.sacar(300000.00f) ? 
-				"Saque efetuado com sucesso!" : "Saldo Insuficiente"));
+				"Saque efetuado com sucesso! | Saldo: " + c2.getSaldo() : "Saldo Insuficiente! | Saldo: " + c2.getSaldo()));
+		
+		System.out.println("\n");
 		
 		c2.visualizar();
-		
-		/* Depósito na Conta c2*/
 		
 		c2.depositar(50000.00f);
 		c2.visualizar();
 	
 		/* Instanciar Objetos da Classe ContaCorrente*/
 		
+		System.out.println(Cores.TEXT_GREEN_BOLD_BRIGHT + "\nTestes - Classe ContaCorrente\n" + Cores.TEXT_RESET);
+		
 		ContaCorrente cc1 = new ContaCorrente(3, 789, 1, "Raquel", 200000.00f, 2000.00f);
 		cc1.visualizar();
 		
-		System.out.println("\nSacar R$ 203.000,00 da conta Cc1: " + (cc1.sacar(203000.00f) ? 
-				"Saque efetuado com sucesso! | Saldo: " + cc1.getSaldo() : "Saldo Insuficiente | Saldo: " + cc1.getSaldo()));
+		System.out.println("\nSacar R$ 203.000,00 da conta cc1: " + (cc1.sacar(203000.00f) ? 
+				"Saque efetuado com sucesso! | Saldo: " + cc1.getSaldo() : "Saldo Insuficiente! | Saldo: " + cc1.getSaldo()));
 		
-		System.out.println("\nSacar R$ 202.000,00 da conta Cc1: " + (cc1.sacar(202000.00f) ? 
-				"Saque efetuado com sucesso! | Saldo: " + cc1.getSaldo() : "Saldo Insuficiente | Saldo: " + cc1.getSaldo()));
+		System.out.println("\nSacar R$ 202.000,00 da conta cc1: " + (cc1.sacar(202000.00f) ? 
+				"Saque efetuado com sucesso! | Saldo: " + cc1.getSaldo() : "Saldo Insuficiente! | Saldo: " + cc1.getSaldo()));
 
+		System.out.println("\n");
+		
 		cc1.depositar(2000.00f);
 		cc1.visualizar();
+		
+		/* Instanciar Objetos da Classe ContaPoupanca*/
+		
+		System.out.println(Cores.TEXT_GREEN_BOLD_BRIGHT + "\nTestes - Classe ContaPoupança\n" + Cores.TEXT_RESET);
+		
+		ContaPoupanca cp1 = new ContaPoupanca(4, 789, 2, "Juliana", 2000.00f, 12);
+		cp1.visualizar();
+		
+		System.out.println("\nSacar R$ 800,00 da conta cp1: " + (cp1.sacar(800.00f) ? 
+				"Saque efetuado com sucesso! | Saldo: " + cp1.getSaldo() : "Saldo Insuficiente! | Saldo: " + cp1.getSaldo()));
+		
+		System.out.println("\nSacar R$ 5.000,00 da conta cp1: " + (cp1.sacar(5000.00f) ? 
+				"Saque efetuado com sucesso! | Saldo: " + cp1.getSaldo() : "Saldo Insuficiente! | Saldo: " + cp1.getSaldo()));
+
+		System.out.println("\n");
+		
+		cp1.depositar(2000.00f);
+		cp1.visualizar();
 		
 		while (true) {
 
